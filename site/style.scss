@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000915;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+
+}
+    .header {
+    min-height: 1024px;
+    background-image:url(img/headerBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__box {
+        padding-top: 217px;
+        width: 789px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        color: #FFFFFF;
+        padding-bottom: 32px;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        width: 481px;
+        padding-bottom: 44px;
+    }
+}
+    button {
+    background: #9C0332;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    width: 234px;
+    height: 49px;
+    transition: all .3s;
+        &:hover {
+            background: #EB443F;
+        }
+}
+    .games {
+        height: 556px;
+        &__box {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 32px;
+            padding: 128px 0 128px 0;
+        }
+        &__game {
+            height: 300px;
+            width: 378px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: #FFFFFF;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 16px;
+            padding: 32px;
+            display: flex;
+            align-items: flex-end;
+            transition: all .4s;
+            &:hover {
+                border: 3px solid #44D2FF;
+            }
+        }
+        &_game1 {
+            background-image: url(img/game1Background.jpg);
+           
+        }
+        &_game2 {
+            background-image: url(img/game2Background.jpg);
+        }
+        &_game3 {
+            background-image: url(img/game3Background.jpg);
+
+        }
+    }
+
+    .arcad-game {
+        min-height: 800px;
+        display: flex;
+        gap: 135px;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-right: calc(50% - 600px - 4px); 
+        &__content {
+            width: 584px;
+            display: flex;
+            gap: 32px;
+            flex-direction: column;
+        }
+        &__heading {           
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            color: #FFFFFF;
+        }
+        &__text {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            color: #FFFFFF;
+
+        }
+        &__img {
+            max-height: 333px;
+        }
+        &_puzzles {
+            background-image: url(img/backgroundPuzzles.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            gap: 32px;
+            text-align: center;
+        }
+    }
+
+    .footer {
+        min-height: 80px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__text {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #FFFFFF;
+        }
+    }
+
+
+
+
+    // Мобилка
+
+    @media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header {
+    min-height: 735px;
+    background-size: 280%;
+    background-position: 31%;
+    &__box {
+        width: auto;
+        align-items: center;
+        padding-top: 239px;
+        padding-bottom: 239px;
+    }
+    &__title {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        width: auto;
+        padding-bottom: 32px;
+    }
+    }
+    .games {
+        height: auto;
+        &__game {
+            width: 343px;
+        }
+    }
+    .arcad-game {
+        min-height: auto;
+        gap: 64px;
+        padding-top: 51px;
+        padding-bottom: 85px;
+        justify-content: center;
+        &__content {
+            text-align: center;
+            align-items: center;
+            width: auto;
+        }
+        &__heading {
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            max-width: 343px;
+        }
+        &__img {
+            max-height: 236px;
+        }
+        &_words {
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: nowrap;
+            padding-bottom: 90px;
+        }
+        &_puzzles {
+            min-height: 800px;
+            align-content: flex-start;
+        }
+    }
+    }
+   
+
+
+

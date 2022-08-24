@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000915;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  min-height: 1024px;
+  background-image: url(img/headerBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__box {
+  padding-top: 217px;
+  width: 789px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: #FFFFFF;
+  padding-bottom: 32px;
+}
+
+.header__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  width: 481px;
+  padding-bottom: 44px;
+}
+
+button {
+  background: #9C0332;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  width: 234px;
+  height: 49px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+button:hover {
+  background: #EB443F;
+}
+
+.games {
+  height: 556px;
+}
+
+.games__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 32px;
+  padding: 128px 0 128px 0;
+}
+
+.games__game {
+  height: 300px;
+  width: 378px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.games__game:hover {
+  border: 3px solid #44D2FF;
+}
+
+.games_game1 {
+  background-image: url(img/game1Background.jpg);
+}
+
+.games_game2 {
+  background-image: url(img/game2Background.jpg);
+}
+
+.games_game3 {
+  background-image: url(img/game3Background.jpg);
+}
+
+.arcad-game {
+  min-height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 135px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: calc(50% - 600px - 4px);
+}
+
+.arcad-game__content {
+  width: 584px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.arcad-game__heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+
+.arcad-game__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.arcad-game__img {
+  max-height: 333px;
+}
+
+.arcad-game_puzzles {
+  background-image: url(img/backgroundPuzzles.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 32px;
+  text-align: center;
+}
+
+.footer {
+  min-height: 80px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    min-height: 735px;
+    background-size: 280%;
+    background-position: 31%;
+  }
+  .header__box {
+    width: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 239px;
+    padding-bottom: 239px;
+  }
+  .header__title {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .header__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    width: auto;
+    padding-bottom: 32px;
+  }
+  .games {
+    height: auto;
+  }
+  .games__game {
+    width: 343px;
+  }
+  .arcad-game {
+    min-height: auto;
+    gap: 64px;
+    padding-top: 51px;
+    padding-bottom: 85px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .arcad-game__content {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+  }
+  .arcad-game__heading {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .arcad-game__text {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 343px;
+  }
+  .arcad-game__img {
+    max-height: 236px;
+  }
+  .arcad-game_words {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding-bottom: 90px;
+  }
+  .arcad-game_puzzles {
+    min-height: 800px;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+}
+/*# sourceMappingURL=style.css.map */

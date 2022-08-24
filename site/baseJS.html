@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Супер пупер игры</title>
+    <link href="https://fonts.googleapis.com/css2?family=;300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header center">
+       <div class="header__box">
+        <h1 class="header__title">Добро пожаловать на мой сайт !</h1>
+        <p class="header__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b> поехали </b> и <b> приступай</b></p>
+        <button class="red_buttons">Поехали!</button>
+       </div>
+    </header>
+    <section class="games center">
+        <div class="games__box">
+                <a href="#seasons" >
+                    <div class="games__game games_game1">Игра 1</div>
+                </a>
+            <a href="#words">
+                <div class="games__game games_game2">Игра 2</div></a>
+            <a href="#puzzles">
+                <div class="games__game games_game3">Игра 3</div>
+            </a>
+        </div>
+    </section>
+        <section class="arcad-game center" id="seasons">
+            <div class="arcad-game__content">
+                <h1 class="arcad-game__heading">Времена года!</h1>
+            <p class="arcad-game__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <button onclick="seasons()" class="button">Играть!</button>
+            </div>
+            <img src="img/seasons.svg" alt="" class="arcad-game__img">
+        </section>
+
+
+        <section class="arcad-game arcad-game_words center" id="words">
+            <img src="img/words.svg" alt="" class="arcad-game__img">
+            <div class="arcad-game__content">
+                <h1 class="arcad-game__heading">Запомни слова </h1>
+            <p class="arcad-game__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <button onclick="words()" class="button">Играть!</button>
+            </div>
+        </section>
+
+
+        <section class="arcad-game arcad-game_puzzles center" id="puzzles">
+                <h1 class="arcad-game__heading">Игра в загадки </h1>
+            <p class="arcad-game__text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+            <button onclick="puzzles()" class="button">Играть!</button>
+        </section>
+
+        <footer class="footer">
+            <p class="footer__text">Все права защищены</p>
+        </footer>
+        <script src="baseJS.js"></script>
+</body>
+</html>
